@@ -1,5 +1,5 @@
 adventureworks:
-  target: duckdb
+  target: clickhouse
   outputs:
     duckdb:
      type: duckdb
@@ -14,3 +14,12 @@ adventureworks:
       dbname: adventureworks
       schema: dbo
       threads: 12
+
+    clickhouse:
+      type: clickhouse
+      host: localhost
+      user: default
+      port: 8123
+      dbname: adventureworks
+      schema: adventureworks
+      threads: 10

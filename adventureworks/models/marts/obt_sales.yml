@@ -4,31 +4,31 @@ models:
   - name: obt_sales
     columns:
 
-      - name: sales_key
+      - name: f_sales.sales_key
         description: The surrogate key of the fct sales
         tests:
           - not_null
           - unique
 
-      - name: salesorderid
+      - name: f_sales.salesorderid
         description: The natural key of the saleorderheader
         tests:
           - not_null
 
-      - name: salesorderdetailid
+      - name: f_sales.salesorderdetailid
         description: The natural key of the salesorderdetail
         tests:
           - not_null
 
-      - name: unitprice
+      - name: f_sales.unitprice
         description: The unit price of the product 
         tests:
           - not_null
 
-      - name: orderqty
+      - name: f_sales.orderqty
         description: The quantity of the product 
         tests:
           - not_null
 
-      - name: revenue
+      - name: f_sales.revenue
         description: The revenue obtained by multiplying unitprice and orderqty 

@@ -13,7 +13,7 @@ seeds:
         makeflag: boolean
         productnumber: varchar
         reorderpoint: smallint
-        modifieddate: timestamp
+        modifieddate: timestamp(3) #timestamp
         rowguid: varchar
         productmodelid: integer
         weightunitmeasurecode: varchar
@@ -23,5 +23,5 @@ seeds:
         daystomanufacture: integer
         productline: varchar
         color: varchar
-        sellstartdate: timestamp
-        weight: numeric
+        sellstartdate: timestamp(3) # timestamp
+        weight: Float32

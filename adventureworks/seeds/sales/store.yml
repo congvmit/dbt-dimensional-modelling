@@ -8,4 +8,4 @@ seeds:
         businessentityid: integer
         storename: varchar
         salespersonid: integer
-        modifieddate: timestamp
+        modifieddate: DateTime64(3) #timestamp

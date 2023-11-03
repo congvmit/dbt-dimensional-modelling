@@ -8,7 +8,7 @@ seeds:
         creditcardid: integer
         cardtype: varchar
         expyear: smallint
-        modifieddate: timestamptz
+        modifieddate: DateTime64(3) # timestamptz
         expmonth: smallint
         cardnumber: varchar
 

@@ -7,7 +7,7 @@ seeds:
       column_types: 
         stateprovinceid: integer
         countryregioncode: varchar
-        modifieddate: timestamp
+        modifieddate: timestamp(3)
         rowguid: varchar 
         name: varchar
         territoryid: integer
